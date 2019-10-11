@@ -3,7 +3,7 @@
 	"displayName": "ThemeInfo",
 	"description": "font and color theme info in the statusbar, for screenshots",
 	"version": "0.0.1",
-	"publisher": "mcnerdius",
+	"publisher": "McNerdius",
 	"engines": {
 		"vscode": "^1.32.0"
 	},
