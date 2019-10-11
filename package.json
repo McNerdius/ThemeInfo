@@ -1,7 +1,7 @@
 {
 	"name": "themeinfo",
 	"displayName": "ThemeInfo",
-	"description": "A barebones extension with one job: display your current Theme and Font in the Status Bar to preemptively answer the inevitable 'What Font/Theme is that ?' questions when doing screen captures.",
+	"description": "Displays Theme and Font info in the Status Bar for screen grabs.",
 	"version": "0.0.1",
 	"publisher": "McNerdius",
 	"engines": {

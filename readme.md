@@ -1,4 +1,1 @@
-
-when sharing a vscode screenshot the question "what font/theme is that" is almost inevitable.  enable this extension for screenshots to include that info in your statusbar.
-
-to install: code --install-extension themeinfo-0.0.1.vsix
+A barebones extension with one job: display your current Theme and Font in the Status Bar to preemptively answer the inevitable 'What Font/Theme is that ?' questions when doing screen captures.
