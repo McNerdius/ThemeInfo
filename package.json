@@ -2,7 +2,7 @@
 	"name": "themeinfo",
 	"displayName": "ThemeInfo",
 	"description": "Displays Theme and Font info in the Status Bar for screen grabs.",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "McNerdius",
 	"engines": {
 		"vscode": "^1.32.0"
