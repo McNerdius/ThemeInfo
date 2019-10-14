@@ -5,7 +5,7 @@ let statusBarItem: vscode.StatusBarItem;
 
 export function activate({ subscriptions }: vscode.ExtensionContext)
 {
-	statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
+	statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, 100);
 	subscriptions.push(statusBarItem);
 	subscriptions.push(vscode.workspace.onDidChangeConfiguration(updateStatusBarItem));
 	updateStatusBarItem();
