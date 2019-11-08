@@ -1,4 +1,8 @@
 
+0.0.5:
+
+   add sample pics to readme.md
+
 0.0.4:
 
 Changed to left-alignment -
