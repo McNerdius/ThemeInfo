@@ -1,7 +1,11 @@
 
-0.7:
+0.9:
 
    rehash: themeInfo.statusBar, themeInfo.windowTitle templates and themeInfo.showInfo, themeInfo.addInfo commands
+
+0.7, 0.8:
+
+   failed publishes due to expired PAT
 
 0.6:
 
