@@ -1,7 +1,7 @@
 {
 	"name": "themeinfo",
 	"displayName": "ThemeInfo",
-	"description": "Displays Theme and Font info in the Status Bar for screen grabs.",
+	"description": "Displays theme and font info in the status bar or window title for screenshots and streaming",
 	"version": "0.6.0",
 	"publisher": "McNerdius",
 	"engines": {
@@ -12,7 +12,8 @@
 	],
 	"main": "./out/extension.js",
 	"activationEvents": [
-		"*"
+		"*",
+		"onCommand:themeInfo.showInfo"
 	],
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
@@ -35,5 +36,38 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/McNerdius/ThemeInfo.git"
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "themeInfo.showInfo",
+				"title": "ThemeInfo: Show Info"
+			},
+			{
+				"command": "themeInfo.addInfoGlobal",
+				"title": "ThemeInfo: Append Info to Window Title (Global)"
+			},
+			{
+				"command": "themeInfo.addInfoWorkspace",
+				"title": "ThemeInfo: Append Info to Window Title (Local)"
+			}
+		],
+		"configuration": [
+			{
+				"title": "ThemeInfo",
+				"properties": {
+					"themeInfo.template": {
+						"type": "string",
+						"default": "FONT: ${font} - THEME: ${theme}",
+						"description": "Template for text shown in Status Bar and Popup, exposing ${font} and ${theme} as variables."
+					},
+					"themeInfo.windowTitle": {
+						"type": "string",
+						"default": "",
+						"description": "Same as window.title but with added ${font} and ${theme} variables.  Automatically overwrites window.title when settings are changed."
+					}
+				}
+			}
+		]
 	}
 }
